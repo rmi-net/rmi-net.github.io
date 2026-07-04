@@ -3,41 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rmi-net // Home</title>
-    <!-- Tailwind CSS für das Design -->
+    <title>rmi-net // Digital Space</title>
+    <!-- Modernes Tailwind CSS v4 via CDN -->
     <script src="https://jsdelivr.net"></script>
+    <style>
+        @keyframes pulse-slow { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+        .bg-glow { animation: pulse-slow 8s infinite ease-in-out; }
+    </style>
 </head>
-<body class="bg-[#090d16] text-slate-100 min-h-screen flex flex-col justify-between font-sans antialiased relative">
+<body class="bg-[#0b0f19] text-slate-200 min-h-screen flex flex-col font-sans antialiased relative overflow-x-hidden">
 
-    <!-- Subtiler Hintergrund-Effekt -->
-    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/5 blur-[130px] rounded-full pointer-events-none"></div>
+    <!-- Abstrakter Tech-Hintergrund (Glow-Effekt) -->
+    <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-emerald-500/10 blur-[150px] rounded-full bg-glow pointer-events-none"></div>
 
-    <!-- Header -->
-    <header class="max-w-5xl w-full mx-auto px-6 py-8 relative z-10">
+    <!-- 1. NAVIGATION -->
+    <header class="w-full max-w-6xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
         <div class="text-xl font-bold tracking-wider text-emerald-400 font-mono">
-            rmi-net<span class="text-slate-500">.github.io</span>
+            rmi-net<span class="text-slate-500">.io</span>
         </div>
+        <nav class="flex gap-6 text-sm font-mono text-slate-400">
+            <a href="#projekte" class="hover:text-emerald-400 transition-colors">/projekte</a>
+            <a href="#kontakt" class="hover:text-emerald-400 transition-colors">/kontakt</a>
+        </nav>
     </header>
 
-    <!-- Hauptinhalt -->
-    <main class="max-w-2xl w-full mx-auto px-6 py-12 text-center my-auto relative z-10">
-        <span class="px-3 py-1 text-xs font-medium tracking-widest text-emerald-400 uppercase bg-emerald-500/10 border border-emerald-500/20 rounded-full font-mono">
-            Status: Hauptseite Aktiv
-        </span>
-        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mt-6 mb-4">
-            Bereit für neue <br>
-            <span class="bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">Web-Projekte</span>.
-        </h1>
-        <p class="text-slate-400 text-lg max-w-md mx-auto leading-relaxed">
-            Der Haupt-Server wurde erfolgreich eingerichtet. Ab jetzt werden alle hier hochgeladenen Claude-Artifacts direkt unter dieser Domain erreichbar sein.
-        </p>
+    <!-- 2. HERO SEKTION -->
+    <main class="flex-grow w-full max-w-6xl mx-auto px-6 flex flex-col justify-center py-20 relative z-10">
+        <div class="max-w-3xl">
+            <span class="px-3 py-1 text-xs font-semibold tracking-widest text-emerald-400 uppercase bg-emerald-500/10 border border-emerald-500/20 rounded-full font-mono">
+                Web Development & Design
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mt-6 mb-6 leading-[1.1]">
+                Moderne Interfaces.<br>
+                Sauberer Code. <br>
+                Geliefert via <span class="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">GitHub Pages</span>.
+            </h1>
+            <p class="text-slate-400 text-lg sm:text-xl max-w-xl leading-relaxed mb-8">
+                Willkommen im digitalen Workspace von rmi-net. Hier entstehen responsive Webapplikationen, interaktive Mockups und cleane UI-Experimente – konzipiert mit KI und optimiert für das Web.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projekte" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold rounded-lg font-mono transition-all text-sm tracking-wide shadow-lg shadow-emerald-500/10">
+                    Projekte ansehen
+                </a>
+                <a href="#kontakt" class="px-6 py-3 bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700/60 font-semibold rounded-lg font-mono transition-all text-sm tracking-wide">
+                    Jetzt anfragen
+                </a>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="max-w-5xl w-full mx-auto px-6 py-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500 font-mono relative z-10">
+    <!-- 3. PROJEKT SEKTION -->
+    <section id="projekte" class="w-full max-w-6xl mx-auto px-6 py-24 border-t border-slate-900 relative z-10">
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-white font-mono flex items-center gap-2">
+                <span class="text-emerald-400">#</span> Aktuelle Projekte
+            </h2>
+            <p class="text-slate-400 text-sm mt-1">Auswahl der neuesten Webseiten und Unterseiten.</p>
+        </div>
+
+        <!-- Projekt-Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Projekt 1 (Platzhalter für Ihr Café) -->
+            <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-6 hover:border-emerald-500/30 transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono text-emerald-400 bg-emerald-500/5 px-2 py-1 border border-emerald-500/10 rounded">HTML / Tailwind</span>
+                        <span class="text-xs font-mono text-amber-400/80 bg-amber-500/5 px-2 py-1 border border-amber-500/10 rounded">In Vorbereitung</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Training Website</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        TRAINING 
+                    </p>
+                </div>
+                <a href="./training/" class="text-sm font-mono text-slate-400 hover:text-white flex items-center gap-1 mt-auto">
+                    Live-Demo öffnen &rarr;
+                </a>
+            </div>
+
+            <!-- Projekt 2 (Platzhalter für ein zukünftiges Portfolio) -->
+            <div class="bg-slate-900/40 border border-slate-800/80 rounded-xl p-6 hover:border-emerald-500/30 transition-all flex flex-col justify-between group">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono text-emerald-400 bg-emerald-500/5 px-2 py-1 border border-emerald-500/10 rounded">Vue.js / CSS</span>
+                        <span class="text-xs font-mono text-slate-500 bg-slate-800/20 px-2 py-1 rounded">Geplant</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Personal Portfolio</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Ein minimalistisches, dunkles Portfolio-Layout zur Präsentation von digitalen Arbeiten, Designs und Code-Snippets.
+                    </p>
+                </div>
+                <span class="text-sm font-mono text-slate-600 flex items-center gap-1 mt-auto cursor-not-allowed">
+                    Noch nicht aktiv
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. KONTAKT SEKTION -->
+    <section id="kontakt" class="w-full max-w-3xl mx-auto px-6 py-24 border-t border-slate-900 relative z-10 text-center">
+        <h2 class="text-3xl font-black text-white mb-4">Lust auf ein Projekt?</h2>
+        <p class="text-slate-400 mb-8 max-w-md mx-auto">
+            Haben Sie Fragen oder möchten Sie eine eigene Website erstellen lassen? Schreiben Sie mir eine Nachricht.
+        </p>
+        
+        <!-- Interaktives Kontaktformular mit Erfolgsmeldung -->
+        <form id="contactForm" class="text-left space-y-4 max-w-lg mx-auto bg-slate-900/20 p-6 rounded-xl border border-slate-800/60">
+            <div>
+                <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Name</label>
+                <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-emerald-500 text-sm">
+            </div>
+            <div>
+                <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">E-Mail-Adresse</label>
+                <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-emerald-500 text-sm">
+            </div>
+            <div>
+                <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Nachricht</label>
+                <textarea required rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-mono font-semibold rounded-lg text-sm transition-all border border-slate-700/40">
+                Nachricht senden
+            </button>
+        </form>
+        <div id="successMessage" class="hidden max-w-lg mx-auto mt-4 p-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm rounded-lg font-mono">
+            ✓ Danke! Die Nachricht wurde (simuliert) erfolgreich übermittelt.
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="w-full max-w-6xl mx-auto px-6 py-8 border-t border-slate-900/60 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-slate-500 relative z-10">
         <div>&copy; 2026 rmi-net. Alle Rechte vorbehalten.</div>
-        <div class="text-slate-600">Hosted via GitHub Pages</div>
+        <div class="flex gap-4">
+            <span>Powered by Claude & GitHub Pages</span>
+        </div>
     </footer>
 
+    <!-- JavaScript für das Formular -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.reset();
+            const msg = document.getElementById('successMessage');
+            msg.classList.remove('hidden');
+            setTimeout(() => msg.classList.add('hidden'), 5000);
+        });
+    </script>
 </body>
 </html>
