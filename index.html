@@ -1,65 +1,45 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rmi-net</title>
-    <!-- Zuverlässiges Tailwind CSS v3 Script für sofortiges Laden -->
+    <title>RMI-NET</title>
+    <!-- TAILWIND CSS v3 -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#0b0f19] text-slate-200 min-h-screen flex flex-col font-sans antialiased relative overflow-x-hidden">
 
-    <!-- Hintergrund-Glow -->
+    <!-- BACKGROUND GLOW -->
     <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-emerald-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+    
+    <!-- HEADER-NAVIGATION -->
 
-    <!-- NAVIGATION -->
-    <header class="w-full max-w-6xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
-        <div class="text-xl font-bold tracking-wider text-emerald-400 font-mono">
-            rmi-net<span class="text-slate-500">.github.io</span>
-        </div>
-        <nav class="flex gap-6 text-sm font-mono text-slate-400">
-            <a href="#projekte" class="hover:text-emerald-400 transition-colors">/ projekte</a>
-            <a href="#kontakt" class="hover:text-emerald-400 transition-colors">/ kontakt</a>
-        </nav>
-    </header>
-
-    <!-- HERO SEKTION -->
-    <main class="flex-grow w-full max-w-6xl mx-auto px-6 flex flex-col justify-center py-20 relative z-10">
+    <!-- HERO SECTION -->
+    <main class="w-full max-w-6xl mx-auto px-6 flex flex-col justify-center pt-24 pb-12 relative z-10">
         <div class="max-w-3xl">
             <span class="px-3 py-1 text-xs font-semibold tracking-widest text-emerald-400 uppercase bg-emerald-500/10 border border-emerald-500/20 rounded-full font-mono">
                 Development & Design
             </span>
-            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mt-6 mb-6 leading-tight">
+            <h1 class="text-2xl sm:text-4xl font-black tracking-tight text-white mt-6 mb-6 leading-tight">
                 Powered by Claude<br>
                 & <span class="text-emerald-400">GitHub Pages</span>.
             </h1>
             <p class="text-slate-400 text-lg sm:text-xl max-w-xl leading-relaxed mb-8">
-                Willkommen im digitalen Workspace von rmi-net
+                Welcome to the digital workspace of RMI-NET
             </p>
-            <div class="flex flex-wrap gap-4">
-                <a href="#projekte" class="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold rounded-lg font-mono transition-all text-sm tracking-wide shadow-lg">
-                    Projekte ansehen
-                </a>
-                <a href="#kontakt" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-lg font-mono transition-all text-sm tracking-wide">
-                    Jetzt anfragen
-                </a>
-            </div>
         </div>
-    </main>
+    </main> 
 
-    <!-- PROJEKT SEKTION -->
-    <section id="projekte" class="w-full max-w-6xl mx-auto px-6 py-24 border-t border-slate-900 relative z-10">
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold text-white font-mono">
-                <span class="text-emerald-400">#</span> Aktuelle Projekte
-            </h2>
-            <p class="text-slate-400 text-sm mt-1">Auswahl von Unterseiten</p>
-        </div>
-
-        <!-- Projekt-Grid -->
+    <!-- PROJECT SECTION -->
+    <section id="projects" class="w-full max-w-6xl mx-auto px-6 pt-12 pb-16 border-t border-slate-900/60 relative z-10">
+        <h1 class="text-xl sm:text-3xl font-black tracking-tight text-emerald-400 my-6 leading-tight">
+        # <span class="text-white">Projects</span>
+        </h1>
+        
+        <!-- PROJECT-GRID -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <!-- Projekt 1 (Training) -->
+            <!-- PROJECT 1 (Training) -->
             <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:border-emerald-500/30 transition-all flex flex-col justify-between group">
                 <div>
                     <div class="flex justify-between items-start mb-4">
@@ -72,16 +52,16 @@
                     </p>
                 </div>
                 <a href="./training/" class="text-sm font-mono text-slate-400 hover:text-white flex items-center gap-1 mt-auto">
-                    Test-Demo öffnen &rarr;
+                    Test-Version öffnen &rarr;
                 </a>
             </div>
 
-            <!-- Projekt 2 -->
+            <!-- PROJECT 2 (Portfolio) -->
             <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:border-emerald-500/30 transition-all flex flex-col justify-between group">
                 <div>
                     <div class="flex justify-between items-start mb-4">
-                        <span class="text-xs font-mono text-emerald-400 bg-emerald-500/5 px-2 py-1 border border-emerald-500/10 rounded">Vue.js / CSS</span>
-                        <span class="text-xs font-mono text-slate-500 bg-slate-800/20 px-2 py-1 rounded">Geplant</span>
+                        <span class="text-xs font-mono text-emerald-400 bg-emerald-500/5 px-2 py-1 border border-emerald-500/10 rounded">HTML / Tailwind</span>
+                        <span class="text-xs font-mono text-slate-500 bg-slate-800/20 px-2 py-1 rounded">Planned</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Portfolio</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">
@@ -89,57 +69,34 @@
                     </p>
                 </div>
                 <span class="text-sm font-mono text-slate-600 flex items-center gap-1 mt-auto cursor-not-allowed">
-                    Noch nicht aktiv
+                    Not active yet
                 </span>
             </div>
 
         </div>
     </section>
 
-    <!-- KONTAKT SEKTION -->
-    <section id="kontakt" class="w-full max-w-3xl mx-auto px-6 py-24 border-t border-slate-900 relative z-10 text-center">
-        <h2 class="text-3xl font-black text-white mb-4">KONTAKT-DEMO</h2>
-        <p class="text-slate-400 mb-8 max-w-md mx-auto">
-            DEMO ONLY
-        </p>
-        
-        <form id="contactForm" class="text-left space-y-4 max-w-lg mx-auto bg-slate-900/20 p-6 rounded-xl border border-slate-800">
-            <div>
-                <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Name</label>
-                <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-emerald-500 text-sm">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="w-full max-w-6xl mx-auto px-6 pt-12 pb-16 border-t border-slate-900/60 relative z-10">
+        <h1 class="text-xl sm:text-3xl font-black tracking-tight text-emerald-400 my-6 leading-tight">
+        # <span class="text-white">Contact</span>
+        </h1>
+        <!-- CONTACT-GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">      
+            <!-- CONTACT 1 -->
+            <div class="bg-slate-900/40 border border-slate-800 rounded-xl p-6 hover:border-emerald-500/30 transition-all flex flex-col justify-between group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-mono text-emerald-400 bg-emerald-500/5 px-2 py-1 border border-emerald-500/10 rounded"> rmi-net.github.io</span>
+                    <span class="text-xs font-mono text-slate-500 bg-slate-800/20 px-2 py-1 rounded">Planned</span>
+                </div>
             </div>
-            <div>
-                <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">E-Mail-Adresse</label>
-                <input type="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-emerald-500 text-sm">
-            </div>
-            <div>
-                <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Nachricht</label>
-                <textarea required rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-emerald-500 text-sm"></textarea>
-            </div>
-            <button type="submit" class="w-full py-3 bg-slate-800 hover:bg-slate-700 text-emerald-400 font-mono font-semibold rounded-lg text-sm transition-all border border-slate-700">
-                Nachricht senden
-            </button>
-        </form>
-        <div id="successMessage" class="hidden max-w-lg mx-auto mt-4 p-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm rounded-lg font-mono">
-            ✓ Danke! Die Nachricht wurde erfolgreich übermittelt.
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="w-full max-w-6xl mx-auto px-6 py-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-slate-500 relative z-10">
-        <div>&copy; 2026 rmi-net. Alle Rechte vorbehalten.</div>
+        <div>&copy; 2026 rmi-net. All rights reserved.</div>
         <div>Powered by Claude & GitHub Pages</div>
     </footer>
-
-    <!-- Formular-Logik -->
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            this.reset();
-            const msg = document.getElementById('successMessage');
-            msg.classList.remove('hidden');
-            setTimeout(() => msg.classList.add('hidden'), 5000);
-        });
-    </script>
 </body>
 </html>
